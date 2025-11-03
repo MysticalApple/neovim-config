@@ -739,6 +739,9 @@ require('lazy').setup({
           end,
         },
       }
+      vim.lsp.config['verible'] = {
+        cmd = { 'verible-verilog-ls', '--rules_config_search' },
+      }
     end,
   },
 
